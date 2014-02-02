@@ -21,6 +21,8 @@
 		DFFA53EF189DDF5300B8AB64 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFFA53D1189DDF5300B8AB64 /* UIKit.framework */; };
 		DFFA53F7189DDF5300B8AB64 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFFA53F5189DDF5300B8AB64 /* InfoPlist.strings */; };
 		DFFA53F9189DDF5300B8AB64 /* DoubanReadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFA53F8189DDF5300B8AB64 /* DoubanReadTests.m */; };
+		DFFA5404189DDF8200B8AB64 /* DDMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFA5403189DDF8200B8AB64 /* DDMenuController.m */; };
+		DFFA5407189DE0F700B8AB64 /* BaseUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFA5406189DE0F700B8AB64 /* BaseUIViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,11 @@
 		DFFA53F4189DDF5300B8AB64 /* DoubanReadTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DoubanReadTests-Info.plist"; sourceTree = "<group>"; };
 		DFFA53F6189DDF5300B8AB64 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DFFA53F8189DDF5300B8AB64 /* DoubanReadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoubanReadTests.m; sourceTree = "<group>"; };
+		DFFA5402189DDF8200B8AB64 /* DDMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMenuController.h; sourceTree = "<group>"; };
+		DFFA5403189DDF8200B8AB64 /* DDMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMenuController.m; sourceTree = "<group>"; };
+		DFFA5405189DE0F700B8AB64 /* BaseUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseUIViewController.h; sourceTree = "<group>"; };
+		DFFA5406189DE0F700B8AB64 /* BaseUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseUIViewController.m; sourceTree = "<group>"; };
+		DFFA5408189DE12D00B8AB64 /* DoubanConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubanConfig.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +119,10 @@
 		DFFA53D3189DDF5300B8AB64 /* DoubanRead */ = {
 			isa = PBXGroup;
 			children = (
+				DFFA5405189DE0F700B8AB64 /* BaseUIViewController.h */,
+				DFFA5406189DE0F700B8AB64 /* BaseUIViewController.m */,
+				DFFA5402189DDF8200B8AB64 /* DDMenuController.h */,
+				DFFA5403189DDF8200B8AB64 /* DDMenuController.m */,
 				DFFA53DC189DDF5300B8AB64 /* LLAppDelegate.h */,
 				DFFA53DD189DDF5300B8AB64 /* LLAppDelegate.m */,
 				DFFA53DF189DDF5300B8AB64 /* Main.storyboard */,
@@ -119,6 +130,7 @@
 				DFFA53E3189DDF5300B8AB64 /* LLViewController.m */,
 				DFFA53E5189DDF5300B8AB64 /* Images.xcassets */,
 				DFFA53D4189DDF5300B8AB64 /* Supporting Files */,
+				DFFA5408189DE12D00B8AB64 /* DoubanConfig.h */,
 			);
 			path = DoubanRead;
 			sourceTree = "<group>";
@@ -252,7 +264,9 @@
 			files = (
 				DFFA53DE189DDF5300B8AB64 /* LLAppDelegate.m in Sources */,
 				DFFA53DA189DDF5300B8AB64 /* main.m in Sources */,
+				DFFA5404189DDF8200B8AB64 /* DDMenuController.m in Sources */,
 				DFFA53E4189DDF5300B8AB64 /* LLViewController.m in Sources */,
+				DFFA5407189DE0F700B8AB64 /* BaseUIViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
