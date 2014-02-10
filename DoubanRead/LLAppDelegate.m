@@ -7,12 +7,30 @@
 //
 
 #import "LLAppDelegate.h"
-
+#import "LLLeftViewController.h"
+#import "LLViewController.h"
 @implementation LLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    LLViewController *firstView = [[LLViewController alloc] init];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:firstView];
+    
+    DDMenuController *rootController = [[DDMenuController alloc] initWithRootViewController:navController];
+    
+    _mainController = rootController;
+    
+    LLLeftViewController *leftController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"leftsb"];
+    UINavigationController *navLeft = [[UINavigationController alloc] initWithRootViewController:leftController];
+    
+    rootController.leftViewController = navLeft;
+   
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = rootController;
+    
+    [self.window makeKeyAndVisible];
+
     return YES;
 }
 							

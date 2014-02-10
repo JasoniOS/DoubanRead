@@ -23,6 +23,7 @@
 		DFFA53F9189DDF5300B8AB64 /* DoubanReadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFA53F8189DDF5300B8AB64 /* DoubanReadTests.m */; };
 		DFFA5404189DDF8200B8AB64 /* DDMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFA5403189DDF8200B8AB64 /* DDMenuController.m */; };
 		DFFA5407189DE0F700B8AB64 /* BaseUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFA5406189DE0F700B8AB64 /* BaseUIViewController.m */; };
+		DFFA540B189E28FE00B8AB64 /* LLLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFA540A189E28FE00B8AB64 /* LLLeftViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		DFFA5405189DE0F700B8AB64 /* BaseUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseUIViewController.h; sourceTree = "<group>"; };
 		DFFA5406189DE0F700B8AB64 /* BaseUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseUIViewController.m; sourceTree = "<group>"; };
 		DFFA5408189DE12D00B8AB64 /* DoubanConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubanConfig.h; sourceTree = "<group>"; };
+		DFFA5409189E28FE00B8AB64 /* LLLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LLLeftViewController.h; path = leftView/LLLeftViewController.h; sourceTree = "<group>"; };
+		DFFA540A189E28FE00B8AB64 /* LLLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LLLeftViewController.m; path = leftView/LLLeftViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,8 @@
 				DFFA5403189DDF8200B8AB64 /* DDMenuController.m */,
 				DFFA53DC189DDF5300B8AB64 /* LLAppDelegate.h */,
 				DFFA53DD189DDF5300B8AB64 /* LLAppDelegate.m */,
+				DFFA5409189E28FE00B8AB64 /* LLLeftViewController.h */,
+				DFFA540A189E28FE00B8AB64 /* LLLeftViewController.m */,
 				DFFA53DF189DDF5300B8AB64 /* Main.storyboard */,
 				DFFA53E2189DDF5300B8AB64 /* LLViewController.h */,
 				DFFA53E3189DDF5300B8AB64 /* LLViewController.m */,
@@ -267,6 +272,7 @@
 				DFFA5404189DDF8200B8AB64 /* DDMenuController.m in Sources */,
 				DFFA53E4189DDF5300B8AB64 /* LLViewController.m in Sources */,
 				DFFA5407189DE0F700B8AB64 /* BaseUIViewController.m in Sources */,
+				DFFA540B189E28FE00B8AB64 /* LLLeftViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +481,7 @@
 				DFFA53FE189DDF5300B8AB64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DFFA53FF189DDF5300B8AB64 /* Build configuration list for PBXNativeTarget "DoubanReadTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +490,7 @@
 				DFFA5401189DDF5300B8AB64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

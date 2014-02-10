@@ -26,7 +26,7 @@
 
 #import "DDMenuController.h"
 #define kMenuFullWidth 320.0f
-#define kMenuDisplayedWidth 270.0f // 显示宽度
+#define kMenuDisplayedWidth 135 // 显示宽度
 #define kMenuOverlayWidth (self.view.bounds.size.width - kMenuDisplayedWidth)
 #define kMenuBounceOffset 10.0f
 #define kMenuBounceDuration .3f
