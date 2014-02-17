@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF9F202218B1D7D8002CBA95 /* LLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9F202118B1D7D8002CBA95 /* LLViewController.m */; };
 		DFAB0A6D18AB47E100CBDCC9 /* LLLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAB0A6C18AB47E100CBDCC9 /* LLLeftViewController.m */; };
 		DFAB0A9518AB4BD800CBDCC9 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAB0A7118AB4BD800CBDCC9 /* AFHTTPRequestOperation.m */; };
 		DFAB0A9618AB4BD800CBDCC9 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAB0A7318AB4BD800CBDCC9 /* AFHTTPRequestOperationManager.m */; };
@@ -32,7 +33,6 @@
 		DFFA53DA189DDF5300B8AB64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFA53D9189DDF5300B8AB64 /* main.m */; };
 		DFFA53DE189DDF5300B8AB64 /* LLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFA53DD189DDF5300B8AB64 /* LLAppDelegate.m */; };
 		DFFA53E1189DDF5300B8AB64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFFA53DF189DDF5300B8AB64 /* Main.storyboard */; };
-		DFFA53E4189DDF5300B8AB64 /* LLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFA53E3189DDF5300B8AB64 /* LLViewController.m */; };
 		DFFA53E6189DDF5300B8AB64 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFFA53E5189DDF5300B8AB64 /* Images.xcassets */; };
 		DFFA53ED189DDF5300B8AB64 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFFA53EC189DDF5300B8AB64 /* XCTest.framework */; };
 		DFFA53EE189DDF5300B8AB64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFFA53CD189DDF5300B8AB64 /* Foundation.framework */; };
@@ -54,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF9F202018B1D7D8002CBA95 /* LLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLViewController.h; sourceTree = "<group>"; };
+		DF9F202118B1D7D8002CBA95 /* LLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLViewController.m; sourceTree = "<group>"; };
 		DFAB0A6B18AB47E100CBDCC9 /* LLLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLLeftViewController.h; sourceTree = "<group>"; };
 		DFAB0A6C18AB47E100CBDCC9 /* LLLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLLeftViewController.m; sourceTree = "<group>"; };
 		DFAB0A7018AB4BD800CBDCC9 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -103,8 +105,6 @@
 		DFFA53DC189DDF5300B8AB64 /* LLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLAppDelegate.h; sourceTree = "<group>"; };
 		DFFA53DD189DDF5300B8AB64 /* LLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLAppDelegate.m; sourceTree = "<group>"; };
 		DFFA53E0189DDF5300B8AB64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DFFA53E2189DDF5300B8AB64 /* LLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLViewController.h; sourceTree = "<group>"; };
-		DFFA53E3189DDF5300B8AB64 /* LLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLViewController.m; sourceTree = "<group>"; };
 		DFFA53E5189DDF5300B8AB64 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DFFA53EB189DDF5300B8AB64 /* DoubanReadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoubanReadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFFA53EC189DDF5300B8AB64 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -244,8 +244,8 @@
 				DFAB0A6B18AB47E100CBDCC9 /* LLLeftViewController.h */,
 				DFAB0A6C18AB47E100CBDCC9 /* LLLeftViewController.m */,
 				DFFA53DF189DDF5300B8AB64 /* Main.storyboard */,
-				DFFA53E2189DDF5300B8AB64 /* LLViewController.h */,
-				DFFA53E3189DDF5300B8AB64 /* LLViewController.m */,
+				DF9F202018B1D7D8002CBA95 /* LLViewController.h */,
+				DF9F202118B1D7D8002CBA95 /* LLViewController.m */,
 				DFFA53E5189DDF5300B8AB64 /* Images.xcassets */,
 				DFFA53D4189DDF5300B8AB64 /* Supporting Files */,
 				DFFA5408189DE12D00B8AB64 /* DoubanConfig.h */,
@@ -386,11 +386,11 @@
 				DFAB0A9818AB4BD800CBDCC9 /* AFNetworkReachabilityManager.m in Sources */,
 				DFAB0A9E18AB4BD800CBDCC9 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				DFFA5404189DDF8200B8AB64 /* DDMenuController.m in Sources */,
+				DF9F202218B1D7D8002CBA95 /* LLViewController.m in Sources */,
 				DFAB0A9A18AB4BD800CBDCC9 /* AFURLConnectionOperation.m in Sources */,
 				DFAB0AA318AB4BD800CBDCC9 /* UIProgressView+AFNetworking.m in Sources */,
 				DFAB0A9718AB4BD800CBDCC9 /* AFHTTPSessionManager.m in Sources */,
 				DFAB0A9B18AB4BD800CBDCC9 /* AFURLRequestSerialization.m in Sources */,
-				DFFA53E4189DDF5300B8AB64 /* LLViewController.m in Sources */,
 				DFAB0AA118AB4BD800CBDCC9 /* UIButton+AFNetworking.m in Sources */,
 				DFAB0AA218AB4BD800CBDCC9 /* UIImageView+AFNetworking.m in Sources */,
 				DFFA5407189DE0F700B8AB64 /* BaseUIViewController.m in Sources */,

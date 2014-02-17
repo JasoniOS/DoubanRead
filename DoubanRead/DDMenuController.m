@@ -409,16 +409,13 @@ bool isFirstStart = YES;
     }
     
     if (_menuFlags.canShowLeft) {
-        UIButton *leftButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30.0, 30.0)];
-        
-        [leftButton setBackgroundImage:[UIImage imageNamed:@"top_user_iphone.png"] forState:UIControlStateNormal];
-        
-        [leftButton addTarget:self action:@selector(showLeft:) forControlEvents:UIControlEventTouchUpInside];
-        UIBarButtonItem *item  = [[UIBarButtonItem alloc] initWithCustomView:leftButton];
+       
+        UIBarButtonItem *btn = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemOrganize target:self action:@selector(showLeft:)];
+     
         
         
         
-        topController.navigationItem.leftBarButtonItem = item;
+        topController.navigationItem.leftBarButtonItem = btn;
     } else {
         topController.navigationItem.leftBarButtonItem = nil;
     }
@@ -631,12 +628,13 @@ bool isFirstStart = YES;
         UIView *view = _root.view;
         view.frame = self.view.bounds;
         [self.view addSubview:view];
-
-        UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
-        pan.delegate = (id<UIGestureRecognizerDelegate>)self;
-        [view addGestureRecognizer:pan];
-        _pan = pan;
-        
+#pragma mark- 取消滑动
+/*
+//        UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
+//        pan.delegate = (id<UIGestureRecognizerDelegate>)self;
+//        [view addGestureRecognizer:pan];
+//        _pan = pan;
+*/
     } else {
         
         if (tempRoot) {

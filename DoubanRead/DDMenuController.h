@@ -67,9 +67,9 @@ typedef enum {
 
 @property(nonatomic,assign) id <DDMenuControllerDelegate> delegate;
 
-@property(nonatomic,strong) UIViewController *leftViewController;
-@property(nonatomic,strong) UIViewController *rightViewController;
-@property(nonatomic,strong) UIViewController *rootViewController;
+@property(nonatomic,strong) IBOutlet UIViewController *leftViewController;
+@property(nonatomic,strong) IBOutlet UIViewController *rightViewController;
+@property(nonatomic,strong) IBOutlet UIViewController *rootViewController;
 
 @property(nonatomic,readonly) UITapGestureRecognizer *tap;
 @property(nonatomic,readonly) UIPanGestureRecognizer *pan;

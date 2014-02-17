@@ -13,22 +13,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    LLViewController *firstView = [[LLViewController alloc] init];
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:firstView];
-    
+     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+   
+    UINavigationController *navController = [sb instantiateViewControllerWithIdentifier:@"mainsb"];
     DDMenuController *rootController = [[DDMenuController alloc] initWithRootViewController:navController];
     
-    _mainController = rootController;
-    
-    LLLeftViewController *leftController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"leftsb"];
-    UINavigationController *navLeft = [[UINavigationController alloc] initWithRootViewController:leftController];
-    
+   
+    UINavigationController *navLeft = [sb instantiateViewControllerWithIdentifier:@"meansb"];
     rootController.leftViewController = navLeft;
    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.backgroundColor = [UIColor grayColor];
     self.window.rootViewController = rootController;
-    
     [self.window makeKeyAndVisible];
 
     return YES;
